@@ -1,0 +1,184 @@
+/* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  line-height: 1.6; /* Makes text easier to read */
+  margin: 0; /* Ensure no extra space around body */
+}
+
+/* Main Content */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+/* HEADER */
+header {
+  background-color: #343a40;
+  color: white;
+  padding: 15px 20px; /* Reduced padding for a tighter fit */
+  margin: 0; /* Remove any margin around the header */
+}
+
+/* FLEX CONTAINER FOR NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between; /* Pushes left and right sections apart */
+  align-items: center;
+  width: 100%; /* Ensures full-width navbar */
+}
+
+/* LOGO + TITLE CONTAINER (LEFT SIDE) */
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+/* LOGO */
+.logo img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px; /* Space between logo and title */
+}
+
+/* TITLE */
+.nav-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin-left: 20px; /* Closer to the logo */
+}
+
+/* NAV LINKS (RIGHT SIDE) */
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between links */
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Introductory Sentence */
+p.intro {
+  font-size: 24px; /* Increased font size */
+  font-style: italic; /* Italicized for emphasis */
+  color: #495057;
+  margin-bottom: 20px;
+}
+
+/* Two Side-by-Side Paragraphs */
+.film-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.paragraph {
+  width: 48%; /* Adjusts width of each paragraph */
+}
+
+.paragraph p {
+  text-align: justify; /* Aligns the text for better readability */
+}
+
+/* Photos next to each other */
+.film-images {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.film-images img {
+  width: 48%; /* Ensures the images are next to each other */
+  border-radius: 8px;
+  object-fit: cover; /* Ensures the images don't distort */
+}
+
+/* FOOTER */
+footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  margin: 0; /* Remove any margin around the footer */
+}
+
+/* Calculator Form */
+.calculator-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between form elements */
+  margin-top: 20px;
+}
+
+/* Label Styles */
+.calculator-form label {
+  font-size: 20px; /* Larger font size */
+  font-weight: bold; /* Make labels stand out */
+  color: #343a40; /* Dark color to match header */
+}
+
+/* Input Styles */
+.calculator-form input {
+  padding: 12px; /* Bigger padding for more space */
+  font-size: 18px; /* Larger text size */
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Rounded corners for a softer look */
+  width: 100%; /* Makes inputs full-width */
+  max-width: 400px; /* Limit width to avoid stretching */
+  margin: 0 auto; /* Centers input fields */
+}
+
+/* Button Styles */
+.calculator-form button {
+  background-color: #343a40;
+  color: white;
+  padding: 12px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 400px; /* Limits button width */
+  margin: 0 auto; /* Centers the button */
+}
+
+.calculator-form button:hover {
+  background-color: #495057; /* Darken button on hover */
+}
+
+/* Total cost result */
+.calculator-form p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #343a40;
+}
